@@ -15,14 +15,14 @@
   <body>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Made With Elixir</a>
+        <a id="logo-container" href="<%= page_path(@conn, :index) %>" class="brand-logo">Made With Elixir</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Share App</a></li>
+          <li><a href="<%= app_path(@conn, :new) %>">Share App</a></li>
           <li><a href="#">Login With Github</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a class="waves-effect" href="#">Share App</a></li>
+          <li><a class="waves-effect" href="<%= app_path(@conn, :new) %>">Share App</a></li>
           <li><a class="waves-effect waves-light" href="#">Login With Github</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>

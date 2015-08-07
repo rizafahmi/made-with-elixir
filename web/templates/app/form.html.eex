@@ -10,27 +10,27 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= label f, :name, "Name", class: "control-label" %>
-    <%= text_input f, :name, class: "form-control" %>
+  <div class="input-field">
+    <%= label f, :name, "Name" %>
+    <%= text_input f, :name %>
   </div>
 
-  <div class="form-group">
-    <%= label f, :url, "Url", class: "control-label" %>
-    <%= text_input f, :url, class: "form-control" %>
+  <div class="input-field">
+    <%= label f, :url, "Url" %>
+    <%= text_input f, :url %>
   </div>
 
-  <div class="form-group">
-    <%= label f, :github_url, "Github url", class: "control-label" %>
-    <%= text_input f, :github_url, class: "form-control" %>
+  <div class="input-field">
+    <%= label f, :github_url, "Github url" %>
+    <%= text_input f, :github_url, class: "" %>
   </div>
 
-  <div class="form-group">
-    <%= label f, :description, "Description", class: "control-label" %>
-    <%= textarea f, :description, class: "form-control" %>
+  <div class="input-field">
+    <%= label f, :description, "Description" %>
+    <%= textarea f, :description, class: "materialize-textarea" %>
   </div>
 
-  <div class="form-group">
+  <div class="input-field">
     <%= submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end %>
