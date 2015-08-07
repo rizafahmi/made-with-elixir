@@ -1,0 +1,29 @@
+<h2>Show app</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @app.name %>
+  </li>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @app.url %>
+  </li>
+
+  <li>
+    <strong>Github url:</strong>
+    <%= @app.github_url %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @app.description %>
+  </li>
+
+</ul>
+
+
+<%= link "Edit", to: app_path(@conn, :edit, @app) %>
+<%= link "Back", to: app_path(@conn, :index) %>

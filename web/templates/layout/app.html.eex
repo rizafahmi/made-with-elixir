@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello Phoenix!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Made With Elixir</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Share App</a></li>
+          <li><a href="#">Login With Github</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a class="waves-effect" href="#">Share App</a></li>
+          <li><a class="waves-effect waves-light" href="#">Login With Github</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+
+    <div class="container" role="main">
+
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+      <div class="container">
+        <div class="section">
+
+          <%= @inner %>
+
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">About</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
